@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg " style="background-color: white;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="slike/StiehlTech-Logo-FullColor-RGB-1.svg" alt="logo"  class="d-inline-block logo"/></a>
+          <button class="navbar-toggler custom-toggler" type="button"  data-bs-toggle="offcanvas" data-bs-target="#navbaric" aria-controls="navbaric">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="navbaric" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Our Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Case Studies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Publications</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="testimonial.html">Testimonials</a>
+                  </li>
+
+              </ul>
+              <button class="button1" onclick="openForm()">Contact Us</button>
+                  <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                      <h1>Contact Us</h1>
+                      <p>Please reach out to us for more information or samples to trial.</p>
+                      <label for="fname">Full name:</label><br>
+                      <input type="text"  name="Fullname"><br>
+                      <label for="type-of-facility">Type of Facility</label><br>
+                         <select name="facility" id="type-of-facility">
+                          <option value="">Choose one</option>
+                          <option value="skilled"><strong>Skilled Nursing</strong> </option>
+                          <option value="hospital"> <strong>Hospital</strong></option>
+                          <option value="outpatient"> <strong>Outpatient</strong></option>
+                          <option value="home-health"> <strong>Home-Health</strong></option>
+                      </select><br>
+                      <table >
+                        <tr>
+                            <td style="width: 290px;"><label for="email">Email</label></td>
+                            <td style="width: 300px;"><label for="phone">Phone</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  name="email" required></td>
+                            <td><input type="tel" id="phone" name="phone"
+                              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                              required></td>
+                        </tr>
+                        </table>
+                    
+                      <label for="text">Comment</label><br>
+                      <textarea id="textare" rows="4" cols="50" name="comment" form="usrform"></textarea>
+                    
+                      <button type="submit" class="btn">Submit</button>
+                      <button class="zatvori" type="button" onclick="closeForm()" type='button'>X</button>
+                    
+                    </form>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <section class="about">
+    <div class="container"> 
+        <div class="aboutslika">
+    <h1>ABOUT </h1>
+    <p>Stiehl Tech</p>
+        </div>
+    </div>
+    </section>
+        <div class="abouttext">
+            <div class="container">
+<p class="abtext">Stiehl Tech was founded by an orthopedic surgeon with a successful history of 
+    developing new medical devices. Our current efforts are focused on making the treatment of wounds safer, more effective and less expensive.</p>
+    <div class="deca">
+    <a  href="https://www.facebook.com/"><svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin linked"  viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+      </svg>
+    </a>
+        </div>
+    </div>
+    </div>
+ 
+    <section class="ceo">
+        <div class="container">
+            <div class="grid">
+                <div class="slikaceo1" >
+                    <img class="slikaceo" src="slike/james_stiehl.png" alt="">
+                    <img src="" alt="">
+                    <h3> James Stiehl</h3>
+                    <p>Founder/CEO</p>
+                    <p>MD, MBA, FAAOS</p>
+                    <a  href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin linke" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                      </svg></a>
+                </div>
+                <div class="ceotekst">
+                    <p > Dr Stiehl : After 36 years, Jim retired from active orthopedic surgery practice to focus on building a medical device company.
+                         While in practice, Jim specialized in total joint replacement and traumatology. He was an academic orthopedist for several years, 
+                         publishing 100 peer reviewed manuscripts, 4 textbooks and 35 textbook chapters. For the past 10 years, Jim participated in several
+                          medical startups, including Traumis, LLC, Blue Ortho SAS, Surgivisio SAS, and Explorer Surgical, Inc, as an early investor and consultant. 
+                          Jim’s most recent efforts have exploited work regarding surgical suction/irrigation systems, of which several concepts have been patented. 
+                          Jim holds an MD with Honors from the University
+                         of Illinois College of Medicine and received the Gold Cord with his MBA from the University of Illinois College of Business.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="grid">
+                <div class="slikaceo2" >
+                    <img class="slikaceo" src="slike/bill_richlen.png" alt="">
+                    <img src="" alt="">
+                    <h3> Bill Richlen</h3>
+                    <p>Vice President of Clinical Services</p>
+                    <p>PT, WCC, DWC</p>
+                    <a  href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin linke" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                      </svg></a>
+                </div>
+                <div class="ceotekst2">
+                    <p> Bill has worked as a physical therapist and clinical wound specialist in long-term care, outpatient, 
+                        skilled rehabilitation and home health. He has served as a clinical instructor for physical therapy students, 
+                        been the Director of several large rehabilitation departments, and has been providing multi-disciplinary wound care education 
+                        to nurses and therapists for over 24 years. 
+                        He has been teaching wound care seminars nationally and speaking at national conferences for over 19 years.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <footer>
+        <div class="container noga">
+    <a href="" class="footer-brand"> <img src="slike/StiehlTech-Logo-FullColor-RGB.svg" alt=""></a>
+    <li class="dete" style="font-weight:700 ;"> 844-PERILAV <span style="font-size: 14px; font-weight: 400;">(737-2528)</span></li>
+      <li class="dete"><a href="">Contact Us</a></li>
+          <li class="dete"><a href="">About Us</a></li>
+          <li class="dete"><a href="">Case Studies</a></li>
+          <li class="dete"><a href="">Our Product</a></li>
+        </div>
+        <div class="peri" >
+          <p> 844-PERILAV <span style="font-size: 14px; font-weight: 400;">(737-2528)</span></p>
+        </div>
+        <div class="container nogaa" >
+          <div class="liko" >
+            <a class="fbb" href=""> <img src="slike/facebook.svg" alt=""></a>
+            <a  class="fbb" href=""><img src="slike/linkedin.svg" alt=""></a>
+          </div>
+          <div class="srediti">
+          <p class="kuca"> © 2022 All Rights Reserved. StiehlTech</p> 
+          <a class="fb" href=""><img src="slike/linkedin.svg" alt=""></a>
+            <a class="fb" href=""> <img src="slike/facebook.svg" alt=""></a>
+          </div> 
+        </div>
+      </footer>
+<script src="sc.js" ></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

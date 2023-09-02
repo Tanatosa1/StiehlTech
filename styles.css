@@ -1,0 +1,959 @@
+@font-face {
+    font-family: 'sans';
+    src: url(fonts/DMSans-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sans';
+    src: url(fonts/DMSans-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sans';
+    src: url(fonts/DMSans-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.custom-toggler.navbar-toggler {
+    border: none;
+}
+.custom-toggler .navbar-toggler-icon {
+    width: 50px;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2873, 121, 164, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+.offcanvas-body .navbar-nav{
+    color: black;
+    margin: 8px 0px 8px 110px;
+    font-style: 'sans';
+    font-size: 16px;
+    gap: 20px;
+    white-space: nowrap;
+}
+.active {
+    color: #0998bd !important ;
+}
+
+.offcanvas-body .nav-link:hover {
+    color: #0998bd;
+}
+.button1 {
+    border: none;
+    background-color: white;
+    align-items: center;
+    height: 57px;
+    width: 135px;
+    border-radius: 10px;
+    color: #0998bd;
+    font-style: 'sans';
+    margin-right: 100px;
+}
+.button1:hover {
+    background-color: #0998bd;
+    color: white;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 30%;
+    border: 3px solid #f1f1f1;
+    z-index: 1;
+  }
+  .form-container {
+    position: relative;
+    max-width: 750px;
+    padding: 10px 50px;
+    background-color: white;
+    font-style: 'sans';
+  }
+  .form-container h1 {
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+
+  }
+  .form-container p {
+    text-align: center;
+    font-size: 18px;
+  }
+  .form-container input[type=text],  .form-container input[type=tel] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  #textare {
+    width: 100%;
+    max-height: 100px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border: none;
+  }
+  #type-of-facility {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 10px 0;
+  }
+  #phone {
+    border: none;
+  }
+  .zatvori {
+position: absolute;
+border: none;
+top: 0;
+right: 1%;
+  }
+  .form-container input[type=text]:focus, .form-container input[type=tel]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .form-container .btn {
+    background-color: #0998bd;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+/*slika prva*/
+.glavna {
+    background-image:
+    url(slike/stiehltech-homepage-hero.png),
+     linear-gradient(to bottom right,#243763 100%,white 0%);
+padding-top: 100px;
+padding-bottom: 164px;
+position: relative;
+
+}
+.strelica { 
+position: absolute;
+bottom: 3%;
+right: 50%;
+}
+
+.glavna .col-lg-6 h1{ 
+    font-size: 60px;
+    font-family: 'sans';
+    font-weight: 700;
+    color: white;
+
+}
+.button2 {
+    border: none;
+    background-color:#0998bd ;
+    align-items: center;
+    height: 57px;
+    width: 135px;
+    border-radius: 10px;
+    color: white;
+    font-style: 'sans';
+}
+.button2:hover {
+    background-color: white;
+    color: #0998bd ;
+}
+.glavnatext1 {
+    font-family:'sans' ;
+    font-size: 36px ;
+    color: white;
+}
+.glavnatext2 {
+    font-family:'sans' ;
+    font-size: 30px ;
+    color: white;
+}
+.slika1 {
+    max-width:538px ;
+    
+}
+.glavna .text1 {
+    padding-right: 90px;
+    padding-top:50px ;
+}
+/*treci dio*/
+.trecidio {
+    padding-top:80px ;
+    padding-bottom: 80px;
+    background-color: #FAFAFA;
+}
+.trecidio iframe {
+    width: 100%;
+    height: 324px;
+    padding-right: 15%;
+    
+}
+.trecidio .grid {
+    display: grid;
+    grid-template-columns: 7% 93%;
+    padding-right: 110px;
+}
+.trecidio h1 {
+    color: #4979A4;
+    font-family: 'sans' ;
+    font-size: 30px;
+    font-weight: 700;
+}
+.trecidio h3 {
+    font-family: 'sans' ;
+    font-size: 22px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+.trecidio p {
+    font-family: 'sans' ;
+    font-size: 16px;
+    
+}
+.cetvrti {
+    background-color: #4979a4 ;
+    text-align: center;
+    color: white;
+    font-family: 'sans' ;
+    font-size: 24px;
+    padding: 30px 0;
+}
+/*cetvrti dio*/
+.cetvrtidio {
+    color: white;
+    padding: 40px 0;
+    background-image: linear-gradient( #1F3469,#03174E);
+    font-family: 'sans' ;
+}
+.cetvrtidio .kisa {
+    padding-top: 20px;
+    padding-right: 9%;
+}
+.cetvrtidio .kisaa {
+    padding-right: 8%;
+}
+.cetvrtidio h3 {
+    font-size: 30px;
+    color: #4979a4 ;
+    font-weight: 700;
+}
+.cetvrtitekst11 {
+font-size:22px;
+}
+.cetvrtislika1 {
+    max-width: 100%;
+}
+.cetvrtislika2 {
+ max-width: 100%;
+
+}
+
+.cetvrtidio .grid {
+    display: grid;
+    grid-template-columns: 7% 93%;
+}
+.cetvrtidio ul{
+    padding-left: 20px;
+}
+.button3 {
+    border: none;
+    background-color:#0998bd ;
+    align-items: center;
+    height: 57px;
+    border-radius: 10px;
+    color: white;
+    font-style: 'sans';
+    padding: 0 20px;
+    font-weight: 500;
+}
+.button3:hover {
+    background-color: white;
+    color: #0998bd;
+}
+.button33 {
+    border: none;
+    background-color:white;
+    align-items: center;
+    height: 57px;
+    border-radius: 10px;
+    color: #0998bd;
+    font-style: 'sans';
+    margin-left: 20px;
+    padding: 0 20px;
+    font-weight: 500;
+}
+.button33:hover {
+    background-color: #0998bd;
+    color: white;
+}
+.button333 {
+    border: solid 1px #0998bd;
+    background-color: transparent;
+    align-items: center;
+    height: 57px;
+    border-radius: 10px;
+    color: white;
+    font-style: 'sans';
+    padding: 0 20px;
+    font-weight: 500;
+}
+.button333:hover {
+    background-color:#0998bd ;
+}
+.cetvrtitekst {
+    font-family: 'sans' ;
+    font-size:22px;
+    padding: 50px 0 30px 0;
+}
+/*peti dio*/
+
+.petidio {
+    background-color: #FAFAFA;
+    padding: 40px 0px;
+    font-style: 'sans';
+}
+
+.petidio .container {
+    padding: 40px 7%;
+}
+.petidio h3 {
+    text-align: center;
+font-size: 30px;
+font-weight: 700;
+}
+.petidio .grid{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    text-align: center;
+    gap: 60px;
+    
+}
+.oznake {
+    color: #4979A4;
+    font-size: 13px;
+}
+.petiglavna { 
+    padding: 30px 30px;
+background-color: white;
+position: relative;
+box-shadow: 0px 3px 6px #00000029;
+top: 0;
+transition: top 1s;
+}
+.petidio a {
+    text-decoration: none;
+    color: #4979a4;
+    font-size: 14px;
+    font-weight: 700;
+position: absolute;
+bottom: 6%;
+right: 39%;
+}
+.petiglavna:hover {
+    top:-20px;
+    
+}
+.slikicapet {
+    width: 58px;
+    height: 58px;
+     border-radius: 50%;
+     background-color: #4979a4; 
+     padding-top: 13px; 
+     margin-left: auto; 
+     margin-right: auto;
+     position: absolute;
+     top: -7%;
+     right: 41%;
+     
+}
+.slikicapett {
+    width: 58px;
+    height: 58px;
+     border-radius: 50%;
+     background-color: #4979a4; 
+     padding-top: 13px; 
+     margin-left: auto; 
+     margin-right: auto;
+     position: absolute;
+     top: -7%;
+     right: 41%;
+     
+}
+.slikicapettt {
+    width: 58px;
+    height: 58px;
+     border-radius: 50%;
+     background-color: #4979a4; 
+     padding-top: 13px; 
+     margin-left: auto; 
+     margin-right: auto;
+     position: absolute;
+     top: -7%;
+     right: 41%;
+     
+}
+.ime {
+    padding-top: 50px;
+    margin-bottom: -3px;
+    font-weight: 700;
+}
+.petitekst {
+   padding-bottom: 20px;
+   font-size: 14px;
+   
+color: #606060;
+}
+/*sestidio*/
+.sestidio {
+    font-family: 'sans' ;
+}
+.sestidio .grid {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 60px;
+}
+.sestinaslov {
+    font-size: 30px ;
+    font-weight: 700;
+    text-align: center;
+    padding: 50px 0;
+}
+.sestidio a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #4979a4;
+}
+.container .card {
+    border: none;
+    box-shadow: 0px 3px 6px #00000029;
+    cursor: pointer;
+    top: 0;
+    transition: top 1s;
+}
+.container .card:hover {
+    top: -5%;
+}
+.card-body h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+.container .datum {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4979a4;
+}
+.container .card-text {
+    font-size: 14px;
+    color: #606060;
+}
+.container .card-body {
+    padding: 20px 60px 20px 25px;   
+}
+.container .card-footer {
+    padding: 10px 40px;
+}
+.button9 {
+    border: none;
+    background-color: white;
+    align-items: center;
+    height: 57px;
+    width: 135px;
+    border-radius: 10px;
+    color: #0998bd;
+    font-style: 'sans';
+    margin: 50px 0;
+    font-weight: 700;
+}
+.button9:hover {
+    background-color: #0998bd;
+    color: white;
+}
+/*footer*/
+footer {
+    background-color: #212121;
+    padding-top: 1px;
+    padding-bottom: 30px;
+    
+}
+.liko {
+    display: none;
+}
+.peri {
+    display: none;
+}
+footer .noga {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.fb {
+    float: right;
+    margin: 0px 6px;
+}
+.fb:hover {
+   color: #0998bd;
+}
+.kuca {
+    display: inline;
+    color: #8E8E8E;
+    font-size: 12px;
+}
+footer li {
+    display: inline;
+    text-decoration: none;
+    color: #8E8E8E ;
+    margin: 10px 0 10px 4.6%;
+    float: right;
+}
+.dete a {
+   text-decoration: none;
+   color: #8E8E8E;
+   white-space: nowrap;
+}
+.dete a:hover {
+color: #0998bd;
+}
+.detee:hover {
+    color:#0998bd ;
+    cursor: pointer;
+}
+/*about us*/
+.about {
+    background-image: url(slike/stiehltech-about_us-hero.png),
+    linear-gradient(to bottom right,#243763 100%,white 0%);
+    border-bottom: 5px solid #4979a4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.aboutslika {
+    text-align: center;
+    color: white;
+    font-family: 'sans';
+    padding: 130px 0 130px;
+}
+.aboutslika h1 { 
+font-size: 60px;
+font-weight: 700;
+}
+.aboutslika p {
+font-size: 30px;
+}
+.abouttext {
+    text-align: center;
+    background-color: #1f3469;
+    padding: 45px 0px;
+    border-bottom: 5px solid #4979a4;
+}
+.abtext {
+    font-size: 22px;
+    font-family: 'sans';
+    color: white;
+}
+.abouttext .container {
+    padding: 0 12%;
+}
+.deca {
+    text-align: center;
+}
+.linked {
+    fill: white;
+    stroke: #1f3469;
+}
+.linked:hover {
+    fill: #4979a4;
+}
+.ceo {
+    padding:40px 0 100px 0;
+    border-bottom: 5px solid #4979a4;
+}
+.linke {
+    fill: #4979a4;
+}
+
+.linke:hover {
+    fill: blue;
+}
+.ceo .grid {
+    display: grid;
+    grid-template-columns:30% 70%;
+    gap: 20px;
+    
+}
+.slikaceo {
+    max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+
+}
+.ceotekst {
+    padding-top: 8%;
+    padding-right: 110px;
+    font-size: 18px;
+    font-family: 'sans';
+    line-height:1.3;
+}
+.ceotekst2 {
+    padding-top: 14%;
+    padding-right: 110px;
+    font-size: 18px;
+    font-family: 'sans';
+    line-height:1.3;
+}
+.slikaceo2 {
+    text-align: center;
+    padding-top: 30px;
+}
+.slikaceo2 h3 {
+    font-size:18px ;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.slikaceo2 p {
+    line-height: 0.2;
+}
+.slikaceo1 {
+    text-align: center;
+    object-position: center;
+}
+.slikaceo1 h3 {
+    font-size:18px ;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.slikaceo1 p {
+    line-height: 0.2;
+}
+/*testimonial */ 
+.testimonial {
+    background-image: url(slike/stiehltech-testimonials-hero.png),
+    linear-gradient(to bottom right,#243763 100%,white 0%);
+    border-bottom: 5px solid #4979a4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.testislika {
+    text-align: center;
+    color: white;
+    font-family: 'sans';
+    padding: 130px 0 130px;
+}
+.testislika h1 { 
+    font-size: 60px;
+    font-weight: 700;
+    }
+    .testislika p {
+    font-size: 30px;
+    }
+.testisredina {
+    background-color: #1f3469;
+    border-bottom: 5px solid #4979a4;
+}
+
+.jili {
+    padding: 65px 20% 40px 20%;
+    position: relative;
+
+}
+.jili p {
+    color: white;
+}
+.jili::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    border-bottom: 1px solid #4979a4;
+    width: 60%;
+}
+.jilii {
+    padding-top: 20px;
+    font-size: 18px;
+    color: white;
+}
+.jili1 {
+    padding: 40px 20% 40px 20%;
+    position: relative;
+    color: white;
+}
+.jili1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    border-bottom: 1px solid #4979a4;
+    width: 60%;
+}
+@media (max-width:1000px) {
+    .form-popup {
+        display: none;
+        position: relative;
+        bottom: 120%;
+        right: 0;
+        border: 3px solid #f1f1f1;
+        z-index: 1;
+      }
+      .form-container {
+        position: relative;
+        max-width: 100%;
+        padding: 10px 0;
+      }
+    .form-container h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  
+    }
+    .form-container p {
+      text-align: center;
+      font-size: 12px;
+    }
+    
+    .offcanvas-body {
+        margin-top: -50px;
+    background-color: #1f3469;
+  }
+  .offcanvas-body .nav-link{
+   
+    padding-bottom: 30px  ;
+    
+}
+  .navbar-nav a {
+    color: white;
+    border-bottom: solid 1px #0998bd;
+    font-size: 22px;
+  }
+    .offcanvas-body .navbar-nav {
+        margin: 40px 0px;
+        text-align: center;
+    gap: 20px;
+    }
+
+    .button1 {
+        font-size: 22px;
+        margin: 0px;
+        color: white;
+        background-color: #0998bd;
+        width: 167px;
+        height: 65px;
+        margin-left: 90px;
+       
+    }
+    .active {
+        color: white !important ;
+    }
+    .glavna {
+        background-image:
+        url(slike/stiehltech-homepage-hero.png),
+         linear-gradient(to bottom right,#243763 100%,white 0%);
+    padding-top: 0px;
+    
+    padding-right: 0px;
+    background-position: center;
+    position: relative;
+    height: 650px;
+    }
+    .strelica { 
+        
+        
+        right: 45%;
+        }
+    .glavna .col-lg-6 h1{ 
+        font-size: 42px;
+    }
+    .glavnatext1 {
+        font-size: 24px ;
+    }
+    .glavnatext2 {
+        font-size: 22px ;
+    }
+    .glavna .text1 {
+        padding-right: 90px;
+        padding-top:50px ;
+    }
+    .button2 {
+        margin-top: 200px;
+    }
+    .slika1 {
+        position: absolute;
+        right: 33%;
+        top: 43%;
+        width: 255px;
+    }
+    /*treci dio*/
+    .trecidio {
+        padding: 50px 0 25px 0;
+    }
+    .trecidio iframe {
+        width: 100%;
+        height: 194px;
+        padding-right: 0;
+        
+    }
+    .trecidio .grid {
+        display: grid;
+        grid-template-columns: 7% 93%;
+        padding: 0;
+    }
+    .trecidio .gridi {
+        padding-top: 30px;
+    }
+    /*cetvrti dio*/
+    .button33 {
+        display: block;
+        margin: 10px 0;
+    }
+    .cetvrtidio a {
+        text-decoration: none;
+    }
+
+    .cetvrtidio .kisa {
+        padding-top: 20px;
+        padding-right: 0%;
+    }
+    .cetvrtidio .kisaa {
+        padding: 0;
+    }
+    /*petidio*/
+    .petidio .container {
+        padding: 20px 7%;
+    }
+    
+    .petidio .grid{
+        display: block;
+        grid-template-columns:repeat(3,1fr);
+        text-align: center;
+        
+    }
+    .petiglavna {
+        margin: 40px 37px;
+        padding: 30px 40px;
+    }
+    /*sesti dio*/
+    .sestidio .grid {
+        display: block;
+        gap: 60px;
+        padding: 0px 20px;
+    }
+    .container .card {
+        margin-bottom: 30px;
+        transition: top 0s;
+    }
+    /*footer*/
+
+    .dete {
+        display: none;
+    }
+    .footer-brand {
+        text-align: center;
+        display: block;
+    }
+   
+    .fb {
+        display: none;
+    }
+    .fbb {
+        margin: 0 5px;
+    }
+    .liko {
+        display: block;
+        text-align: center;
+        padding: 10px 0 10px 0px;
+    }
+    .srediti{
+        text-align: center;
+    }
+    .peri {
+        display: block;
+        color:#8E8E8E ;
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    /*about us */
+    .about {
+        background-image: url(slike/stiehltech-about_us-hero.png) no-repeat center center fixed,
+        linear-gradient(to bottom right,#243763 100%,white 0%);
+       background-position: right;
+       background-size: cover;
+       background-repeat: no-repeat;
+        
+    }
+    .aboutslika h1 { 
+        font-size: 42px;
+        }
+        .aboutslika p {
+        font-size: 24px;
+        }
+        .aboutslika {
+            text-align: center;
+            color: white;
+            font-family: 'sans';
+            padding: 70px 0 70px;
+        }
+    .abtext {
+        font-size: 18px;
+       
+    }
+    .abouttext .container {
+        padding: 0 20px;
+    }
+    .ceo {
+        padding:40px 0 70px 0;
+        border-bottom: 5px solid #4979a4;
+    }
+   
+    .ceo .grid {
+        display: block;
+    }
+    .ceotekst {
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+
+    }
+    .ceotekst2 {
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+      
+    }
+    .testimonial {
+        background-image: url(slike/stiehltech-testimonials-hero11.png) ,
+        linear-gradient(to bottom right,#243763 100%,white 0%);
+       background-size: 100%;
+       width: 100%;
+    }
+    .testislika h1 { 
+        font-size: 42px;
+        
+        }
+        .testislika p {
+        font-size: 24px;
+        }
+ .jili1 {
+    padding: 40px 20px 40px 20px;
+    
+}
+.jili {
+    padding: 40px 20px 40px 20px;
+}
+.jili1::after {
+    bottom: 0;
+    left: 4%;
+    width: 90%;
+}
+.jili::after {
+    bottom: 0;
+    left: 4%;
+    width: 90%;
+}
+} 
+

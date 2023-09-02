@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StiehlTech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    
+    <nav class="navbar sticky-top navbar-expand-lg " style="background-color: white;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="slike/StiehlTech-Logo-FullColor-RGB-1.svg" alt="logo"  class="d-inline-block logo"/></a>
+          <button class="navbar-toggler custom-toggler" type="button"  data-bs-toggle="offcanvas" data-bs-target="#navbaric" aria-controls="navbaric">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="navbaric" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Our Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Case Studies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Publications</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="testimonial.html">Testimonials</a>
+                  </li>
+              </ul> 
+
+                  <button class="button1" onclick="openForm()">Contact Us</button>
+                  <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                      <h1>Contact Us</h1>
+                      <p>Please reach out to us for more information or samples to trial.</p>
+                      <label for="fname">Full name:</label><br>
+                      <input type="text"  name="Fullname"><br>
+                      <label for="type-of-facility">Type of Facility</label><br>
+                         <select name="facility" id="type-of-facility">
+                          <option value="">Choose one</option>
+                          <option value="skilled"><strong>Skilled Nursing</strong> </option>
+                          <option value="hospital"> <strong>Hospital</strong></option>
+                          <option value="outpatient"> <strong>Outpatient</strong></option>
+                          <option value="home-health"> <strong>Home-Health</strong></option>
+                      </select><br>
+                      <table >
+                        <tr>
+                            <td style="width: 290px;"><label for="email">Email</label></td>
+                            <td style="width: 300px;"><label for="phone">Phone</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  name="email" required></td>
+                            <td><input type="tel" id="phone" name="phone"
+                              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                              required></td>
+                        </tr>
+                        </table>
+                    
+                      <label for="text">Comment</label><br>
+                      <textarea id="textare" rows="4" cols="50" name="comment" form="usrform"></textarea>
+                    
+                      <button type="submit" class="btn">Submit</button>
+                      <button class="zatvori" type="button" onclick="closeForm()" type='button'>X</button>
+                    
+                    </form>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="glavna">
+      <div class="container">
+<div class="row">
+  <div class="col-lg-6 text1">
+   <h1> PERILAV JET LAVAGE SYSTEM</h1>
+   <p class="glavnatext1"> A Novel Approach to Treating Hard-to-Heal Wounds</p>
+   <p class="glavnatext2">Safe, Simple, Effective</p>
+   <form class="form-inline buttoninline ms-auto  my-2 my-lg-0">
+    <a href="#">
+      <button class="button2" onclick="openForm()" type="button">Contact Us</button>
+  </a>
+  </form>
+  </div>
+  <div class="col-lg-6 slika11">
+    <img class="slika1" src="slike/stiehltech-homepage-product-1.png" alt="">
+  </div>
+</div>
+<div class="strelica"> <a href="#drugastrana "><img src="slike/angle-down.svg" alt=""></a></div>
+      </div>
+    </div>
+  
+  <section id="drugastrana">
+   <div class="trecidio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <iframe
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+        </div>
+        <div class="col-lg-6 gridi">
+          <h1> What is Perilav?</h1>
+          <h3>The Perilav jet lavage system adapts time-tested surgical debridement methods to remove debris, 
+            necrosis and bioburden/biofilm in an easy to use, all-in-one treatment.</h3>
+             <div class="grid">
+              <div class="slikica1">
+                <img  src="slike/Path 31.svg">
+              </div>
+              <div ><p >  Our system can be used by any trained clinician to debride and clean wounds more effectively than any other irrigation method.</p></div>
+             </div>
+             <div class="grid">
+              <div class="slikica1">
+                <img  src="slike/Path 31.svg">
+              </div>
+              <div ><p >  Our unique treatment enclosure bags make treatment safer and simpler by containing fluid and wound debris in an easily disposable bag.</p></div>
+             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <div class="cetvrti">
+    <p> An Innovative approach for treating acute and chronic wounds in all settings</p>
+  </div>
+
+  <section class="cetvrtidio">
+ <div class="container">
+  <div class="row">
+    <div class="col-lg-6 kisa">
+      <h3>Why Perilav?</h3>
+      <p class="cetvrtitekst11">Perilav addresses both removal of necrotic tissue and managing the bioburden thus promoting a clean, healthy environment in the wound bed. </p>
+      <div class="grid">
+        <div>
+          <img src="slike/Path 31.svg">
+        </div>
+        <div >
+          <p class="cetvrtitekst1"> Effective wound healing entails implementing 6 basic approaches:</p>
+          <ul >
+            <li>Remove the cause</li>
+            <li>Remove the necrotic burden and epibole</li>
+            <li>Manage the bioburden</li>
+            <li>Maintain moist wound environment</li>
+            <li>Ensure adequate tissue perfusion</li>
+            <li>Ensure adequate nutrition</li>
+          </ul>
+        </div>
+       </div>
+       <div class="grid">
+        <div class="slikica1">
+          <img  src="slike/Path 31.svg">
+        </div>
+        <div class="cetvrtitekst1">
+          <p >This simple approach to a complex clinical problem is designed to be delivered in any setting: hospital, 
+          skilled nursing facility, LTAC, outpatient clinic, and even the home.</p>
+        </div>
+       </div>
+   </div>
+    <div class="col-lg-6 order-lg-2" >
+      <img class="cetvrtislika1" src="slike/stiehltech-homepage-product-2.png" alt="">
+    </div>
+    <div class="col-lg-6 order-lg-3 kisaa">
+      <div class="grid">
+        <div class="slikica1">
+          <img  src="slike/Path 31.svg">
+        </div>
+        <div >
+          <p class="cetvrtitekst2">With built-in safeguards, treatment procedures are much less risky for the patient and clinician.</p>
+        </div>
+       </div>
+       <div class="grid">
+        <div class="slikica1">
+          <img  src="slike/Path 31.svg">
+        </div>
+        <div >
+          <p class="cetvrtitekst2">The procedure is billable under selective debridement codes 97597 and 97598, and when used appropriately can be a revenue source for the facility or clinic.</p>
+        </div>
+       </div>
+       <form class="form-inline ms-auto">
+        <a href="#">
+          <button class="button3" type="button">View our product</button>
+      </a>
+      <a href="#">
+        <button class="button33" type="button">View our case studies</button>
+    </a>
+      </form>
+      <p class="cetvrtitekst">See how your business can benefit from Perilav.</p>
+      <form class="form-inline buttoninline ms-auto  my-2 my-lg-0">
+        <a href="#">
+          <button class="button333" type="button">Calculate your revenue</button>
+      </a>
+      </form>
+    </div>
+    <div class="col-lg-6 order-lg-1" >
+      <img class="cetvrtislika2" src="slike/stiehltech-homepage-wc-2.png" alt="">
+    </div>
+  </div>
+ </div>
+  </section>
+  <section class="petidio">
+    <h3>TESTIMONIALS</h3>
+    <hr style="width:60px ; margin-left: auto; margin-right: auto; border-color: #0e0af1; border-width: 2px;">
+    <div class="container">
+     <div class="grid">
+      <div class="petiglavna">
+      <p class="slikicapet"><img src="slike/quote_icon-1.svg"></p>  
+      <p class="ime"> Jill</p>
+      <p class="oznake">PTA, WCC, DWC - SNF</p>
+      <hr style="width: 30px; margin-left: auto; margin-right: auto; border-color: #0e0af1; border-width: 2px;">
+      <p class="petitekst">The Perilav system was perfect for this patient! This patient had
+         end stage MS and was bedridden for several weeks. The system performed wonderfully in decreasing the necrotic tissue and reduced the odor significantly.</p>
+         <a href=""> Read More</a>
+      </div>
+      <div class="petiglavna">
+        <p class="slikicapett"><img src="slike/quote_icon-1.svg"></p>  
+        <p class="ime"> Katie</p>
+        <p class="oznake">PT, WCC, DWC, OMS – HOME HEALTH</p>
+        <hr style="width: 30px; margin-left: auto; margin-right: auto; border-color: #0e0af1; border-width: 2px;">
+        <p class="petitekst">One of the best products out there as I can use it on wounds with different etiologies.
+           It helps reduce bioburden and helps aide in the removal of devitalized tissue, thus promoting formation of healthy granulation tissue.</p>
+           <a href=""> Read More</a>
+          </div>
+          <div class="petiglavna">
+            <p class="slikicapettt"><img src="slike/quote_icon-1.svg"></p>  
+            <p class="ime"> Karen</p>
+            <p class="oznake">MD – WOUND CARE CENTER</p>
+            <hr style="width: 30px; margin-left: auto; margin-right: auto; border-color: #0e0af1; border-width: 2px;">
+            <p class="petitekst">With just two treatments a week followed by appropriate topical dressings, 
+              we have reduced the need for advanced therapies on a lot of wounds and lowered overall costs of managing our wounds.</p>
+               <a href=""> Read More</a>
+            </div>
+        
+     </div>
+    </div>
+  </section>
+  <section class="sestidio">
+    <div class="sestinaslov">
+      <h1>LATEST NEWS</h1>
+      <hr style="width:60px ; margin-left: auto; margin-right: auto; border-color: #0e0af1; border-width: 2px;">
+    </div>
+    <div class="container">
+    <div class="grid">
+      <div class="card">
+        <img class="card-img-top slikica" src="slike/stiehltech-publication-1.png" alt="" >
+        <div class="card-body">
+          <div class="datum">April 18, 2021</div>
+            <h3 class="card-title"> Lorem ipsum dolor sit amet, consetetur</h3>
+            <div class="card-text">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                   sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos…</p>
+                </div>            
+        </div>
+        <div class="card-footer" style="border: none; background-color: white;">
+          <a href="" > Read more</a>
+        </div>
+      </div>
+        <div class="card">
+          <img class="card-img-top slikica" src="slike/stiehltech-publication-2.png" alt="">
+          <div class="card-body">
+            <div class="datum">April 18, 2021</div>
+              <h3 class="card-title"> Lorem ipsum dolor sit amet, consetetur</h3>
+              <div class="card-text">
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, s
+                    ed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos…
+                  </p>
+              </div>
+          </div>
+          <div class="card-footer" style="border: none; background-color: white;">
+            <a href="" > Read more</a>
+          </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top slikica" src=" slike/stiehltech-publication-3.png" alt="">
+        <div class="card-body">
+          <div class="datum">April 18, 2021</div>
+            <h3 class="card-title"> Lorem ipsum dolor sit amet, consetetur</h3>
+            <div class="card-text">
+                <p>LLorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos…
+                </p>
+               </div>
+         </div>
+         <div class="card-footer" style="border: none; background-color: white;">
+         <a href="" > Read more</a>
+         </div>
+        </div>
+    </div> 
+  </div>
+  <form class="form-inline" style="text-align: center;">
+    <a href="#">
+      <button class="button9" type="button">More News</button>
+  </a>
+  </form>
+  
+  </section>
+
+  <footer>
+    <div class="container noga">
+<a href="" class="footer-brand"> <img src="slike/StiehlTech-Logo-FullColor-RGB.svg" alt=""></a>
+<li class="dete" style="font-weight:700 ;"> 844-PERILAV <span style="font-size: 14px; font-weight: 400;">(737-2528)</span></li>
+  <li class="dete"><a href="">Contact Us</a></li>
+      <li class="dete"><a href="">About Us</a></li>
+      <li class="dete"><a href="">Case Studies</a></li>
+      <li class="dete"><a href="">Our Product</a></li>
+    </div>
+    <div class="peri" >
+      <p> 844-PERILAV <span style="font-size: 14px; font-weight: 400;">(737-2528)</span></p>
+    </div>
+    <div class="container nogaa" >
+      <div class="liko" >
+        <a class="fbb" href=""> <img src="slike/facebook.svg" alt=""></a>
+        <a  class="fbb" href=""><img src="slike/linkedin.svg" alt=""></a>
+      </div>
+      <div class="srediti">
+      <p class="kuca"> © 2022 All Rights Reserved. StiehlTech</p> 
+      <a class="fb" href=""><img src="slike/linkedin.svg" alt=""></a>
+        <a class="fb" href=""> <img src="slike/facebook.svg" alt=""></a>
+      </div> 
+    </div>
+  </footer>
+<script src="sc.js" ></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
